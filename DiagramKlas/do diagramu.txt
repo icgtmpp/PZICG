@@ -1,0 +1,21 @@
+
+[Button showPathButton;
+onClickShowPathButton()]
+
+[Button findMeButton;
+onClickFindMeButton()]
+
+[SearchField searchField;
+getPlaces()]
+
+[SettingsButton settingsButton;
+onSettingsButtonClick()]
+
+[Spinner spinnerCategoryList
+SpinnerAdapter(Array<String> categoryList);]
+
+class PlaceSearcher - backend do wyszukiwania pobliskich typów miejsc
+class PathSearcher - backend do obliczenia trasy do celu
+
+[class PlaceDetails
+String getDetails(LatLng position)]
