@@ -5,10 +5,17 @@
     </ion-title>
     <ion-buttons end>
       <button ion-button (click)="addMarker()"><ion-icon name="add"></ion-icon>Add Marker</button>
-    </ion-buttons> 
+    </ion-buttons>
+ 
   </ion-navbar>
 </ion-header>
 
 <ion-content>
+  <ion-select [(ngModel)]="places" placeholder="Places">
+      <ion-option value="restaurants">Restaurants</ion-option>
+      <ion-option value="clubs">Clubs</ion-option>
+      <ion-option value="pubs">Pubs</ion-option>
+      <ion-option value="hotels">Hotels</ion-option>
+    </ion-select> 
   <div #map id="map"></div>
 </ion-content>
